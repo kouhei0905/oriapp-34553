@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>みんなの本棚</title>
+    <title>Bookshare</title>
   </head>
   <body>
     <header>
@@ -19,19 +19,23 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
               <li class="nav-item">
-                <a class="nav-link text-white active" aria-current="page" href="#">ログイン</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">新規登録</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">ログアウト</a>
+                <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"nav-link text-white"%>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled text-white " href="#" tabindex="-1" aria-disabled="true">新規投稿</a>
               </li>
+              <li><%= link_to "by #{current_user.nickname}さん", "#", class: "nav-link text-white" %></li> 
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'ログイン', new_user_session_path, class:"nav-link text-white active" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to '新規登録', new_user_registration_path, class:"nav-link text-white"%>
+              </li>
+            <% end %>
             </ul>
           </div>
         </div>
