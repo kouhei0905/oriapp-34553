@@ -1,0 +1,65 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+
+/* 商品一覧 */
+
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.item-img-content{
+  width: calc((100% - 50px) / 3);
+  margin-bottom: 40px;
+}
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  width:33vh;
+}
+
+.item-title{
+  display: flex;
+}
+
+
+
+/* //商品一覧 */
