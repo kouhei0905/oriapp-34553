@@ -25,7 +25,7 @@
       <% end %>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
       <div class="book__image">
-        <%= image_tag @book.image %>
+        <%= image_tag @book.image, class:"image" %>
       </div>
       <div class="book__body">
         <div class="book__detail">
@@ -56,7 +56,7 @@
       <div class="book__comments">
         <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
         <% if user_signed_in? %>
-          <%= form_with local: true do |f|%>
+          <%= form_with model: [@book,@comment],local: true do |f|%>
             <div class="field">
               <%= f.label :text, "コメント" %><br />
               <%= f.text_field :text %>
@@ -67,18 +67,18 @@
           <% end %> 
         <% end %>
         <%# // ログインしているユーザーには上記を表示する %>
-        <%#<ul class="comments_lists">
+        <ul class="comments_lists">
           <%# 投稿に紐づくコメントを一覧する処理を記述する %>
-            <%#<li class="comments_list">
+            <li class="comments_list">
             <% @comments.each do |comment| %>
-              <%#<p>
+              <p>
               <%= comment.text %>
               <%#<%= link_to comment.user.name,user_path(comment.user_id), class: :comment_user %>
-              <%#</p>
+              </p>
             <% end %>
-            <%#</li>
+            </li>
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
-        <%#</ul>%>
+        </ul>
       </div>
     </div>
   </div>

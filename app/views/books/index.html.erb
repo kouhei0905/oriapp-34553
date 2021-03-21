@@ -52,24 +52,27 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <%= image_tag "image1.png", class:"d-block w-100" %>
+            <%= image_tag "image6.png", class:"d-block w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>読みたい本を探そう</h5>
               <p>お気に入りの本を見つけよう</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">検索する</a></p>
             </div>
           </div>
           <div class="carousel-item">
-            <%= image_tag "image2.png", class:"d-block w-100" %>
+            <%= image_tag "image1.png", class:"d-block w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>本を共有しよう</h5>
-              <p>あなたがいいと思った本を是非共有してください</p>
+              <p>あなたのお気に入りの本を是非共有してください</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">投稿する</a></p>
             </div>
           </div>
           <div class="carousel-item">
-            <%= image_tag "image3.png", class:"d-block w-100" %>
+            <%= image_tag "image5.png", class:"d-block w-100" %>
             <div class="carousel-caption d-none d-md-block">
-              <h5>本を検索しよう</h5>
-              <p>読みたい本を調べよう</p>
+              <h5>気になる本を買おう</h5>
+              <p>楽天市場の商品を検索できます</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">確認する</a></p>
             </div>
           </div>
         </div>
@@ -83,6 +86,32 @@
         </a>
       </div>
     </div>
+
+    <!--表示一覧-->
+    <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+      <%= image_tag "図2.png", class:"img-responsive d-block" %>
+        <h2 class="main_text">お気に入りの本を投稿する</h2>
+        <p>お気に入りの本を共有しよう</p>
+        <%= link_to '投稿する',new_book_path, class:"btn btn-secondary"%>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+      <%= image_tag "図1.png", class:"img-responsive d-block" %>
+        <h2 class="main_text">みんなの投稿を検索する</h2>
+        <p>読みたい本を見つけよう</p>
+        <p><a class="btn btn-secondary" href="#" role="button">検索する &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+      <%= image_tag "図3.png", class:"img-responsive d-block" %>
+        <h2 class="main_text">読みたい本を購入する</h2>
+        <p>楽天市場で本を購入しよう</p>
+        <p><a class="btn btn-secondary" href="#" role="button">楽天検索へ &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
 
       <!--投稿一覧-->
     <div class='item-contents'>
@@ -102,6 +131,11 @@
       <% end %>
       <% end %>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">TOPへ戻る</a></p>
+  </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
