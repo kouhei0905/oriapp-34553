@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     collection do
       get 'search'
+      get 'rakuten'
     end
   end
 end
