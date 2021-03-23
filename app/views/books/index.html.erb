@@ -41,10 +41,6 @@
         </div>
       </nav>
     </header>
-   <%= form_with(url: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-  <%= form.submit "検索", class: "search-btn" %>
-<% end %>
 
     <!--スライドショー-->
     <div class="keyvisual">
@@ -106,13 +102,16 @@
       <%= image_tag "図1.png", class:"img-responsive d-block" %>
         <h2 class="main_text">みんなの投稿を検索する</h2>
         <p>読みたい本を見つけよう</p>
-        <p><a class="btn btn-secondary" href="#" role="button">検索する &raquo;</a></p>
+        <%= form_with(url: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+        <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <%= image_tag "図3.png", class:"img-responsive d-block" %>
         <h2 class="main_text">読みたい本を購入する</h2>
         <p>楽天市場で本を購入しよう</p>
-        <p><a class="btn btn-secondary" href="#" role="button">楽天検索へ &raquo;</a></p>
+        <%= link_to '楽天検索へ',rakuten_books_path, class:"btn btn-secondary"%>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 

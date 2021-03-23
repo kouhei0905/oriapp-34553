@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :authenticate_user!, except: [:show, :index, :search]
+  before_action :authenticate_user!, except: [:show, :index, :search, :rakuten]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
   before_action :set_index, only: [:edit, :update, :destroy]
 
@@ -45,7 +45,11 @@ class BooksController < ApplicationController
     @books = Book.search(params[:keyword])
   end
 
-  
+  def rakuten
+    if params[:keyword]
+      @items = RakutenWebService::Ichiba::Item.search(keyword: params[:keyword])
+    end
+  end
 
   private
 
