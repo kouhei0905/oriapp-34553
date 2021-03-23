@@ -35,8 +35,8 @@ a {
 
 .item-contents {
   background-color: #FFF;
-  display: flex;
   justify-content:space-around;
+  display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
 }
@@ -67,9 +67,14 @@ a {
   margin: 0 auto;
 }
 
+/* //検索フォーム */
+
+.search-form{
+  text-align: right;
+}
 
 
-/* //表示一覧 */
+/* //ログイン */
 
 .main_text{
   font-size:23px;
