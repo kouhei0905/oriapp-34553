@@ -48,19 +48,10 @@
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <%= image_tag "image6.png", class:"d-block w-100" %>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>読みたい本を探そう</h5>
-              <p>お気に入りの本を見つけよう</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">検索する</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag "image1.png", class:"d-block w-100" %>
+            <%= image_tag "image1.png", class:"images w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>本を共有しよう</h5>
               <p>あなたのお気に入りの本を是非共有してください</p>
@@ -68,7 +59,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <%= image_tag "image5.png", class:"d-block w-100" %>
+            <%= image_tag "image5.png", class:"images w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>気になる本を買おう</h5>
               <p>楽天市場の商品を検索できます</p>
@@ -99,7 +90,7 @@
         <%= link_to '投稿する',new_book_path, class:"btn btn-secondary"%>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-      <%= image_tag "図1.png", class:"img-responsive d-block" %>
+      <%= image_tag "図5.png", class:"img-responsive d-block" %>
         <h2 class="main_text">みんなの投稿を検索する</h2>
         <p>読みたい本を見つけよう</p>
         <%= form_with(url: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
@@ -114,28 +105,35 @@
         <%= link_to '楽天検索へ',rakuten_books_path, class:"btn btn-secondary"%>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
+    </div>
 
 
       <!--投稿一覧-->
+      <div class="mainer">
+      <h1> ShareBooks</h1>
     <div class='item-contents'>
     <% @books.each do |book| %>
         <%= link_to book_path(book.id) do %>
+        <div class ='item-all'>
         <div class='item-img-content'>
           <%= image_tag book.image, class: "item-img" %> 
         <div class='item-info'>
           <h3 class='item-title'>
-            <%= book.title%>
+            <a><b><%= book.title%></b></a>
           </h3>
           <div class='item-catch_copy'>
             <span><%= book.catch_copy %></span>
           </div>
           <div class='item-genre'>
-            <span><%= book.genre.name %></span>
+            <span><%= book.genre.name %></span><br>
+            <%= link_to 'more',book_path(book.id), class:"btn btn-secondary"%>
           </div>
         </div>
         </div>
+        </div>
       <% end %>
       <% end %>
+  </div>
   </div>
 
   <!-- FOOTER -->
