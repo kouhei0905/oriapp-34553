@@ -54,16 +54,14 @@
             <%= image_tag "image1.png", class:"images w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>本を共有しよう</h5>
-              <p>あなたのお気に入りの本を是非共有してください</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">投稿する</a></p>
+              <div class="carousel-name">あなたのお気に入りの本を是非共有してください</div>
             </div>
           </div>
           <div class="carousel-item">
             <%= image_tag "image5.png", class:"images w-100" %>
             <div class="carousel-caption d-none d-md-block">
               <h5>気になる本を買おう</h5>
-              <p>楽天市場の商品を検索できます</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">確認する</a></p>
+              <div class="carousel-name">楽天市場で商品を検索できます</div>
             </div>
           </div>
         </div>
@@ -86,13 +84,13 @@
       <div class="col-lg-4">
       <%= image_tag "図2.png", class:"img-responsive d-block" %>
         <h2 class="main_text">お気に入りの本を投稿する</h2>
-        <p>お気に入りの本を共有しよう</p>
-        <%= link_to '投稿する',new_book_path, class:"btn btn-secondary"%>
+        <div class="carousel-name">お気に入りの本を共有しよう</div>
+        <%= link_to '投稿する',new_book_path, class:"btn btn-danger"%>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <%= image_tag "図5.png", class:"img-responsive d-block" %>
         <h2 class="main_text">みんなの投稿を検索する</h2>
-        <p>読みたい本を見つけよう</p>
+        <div class="carousel-name">読みたい本を見つけよう</div>
         <%= form_with(url: search_books_path, local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
         <%= form.submit "検索", class: "search-btn" %>
@@ -101,8 +99,8 @@
       <div class="col-lg-4">
       <%= image_tag "図3.png", class:"img-responsive d-block" %>
         <h2 class="main_text">読みたい本を購入する</h2>
-        <p>楽天市場で本を購入しよう</p>
-        <%= link_to '楽天検索へ',rakuten_books_path, class:"btn btn-secondary"%>
+        <div class="carousel-name">楽天市場で本を購入しよう</div>
+        <%= link_to '楽天検索へ',rakuten_books_path, class:"btn btn-danger"%>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     </div>

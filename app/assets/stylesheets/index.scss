@@ -34,12 +34,16 @@ a {
 }
 
 p{
-  color:white;
+  color:black;
 }
 /* スライドショー */
 .images{
   opacity:0.6;
 
+}
+
+.carousel-name{
+  color:#fff;
 }
 
 
@@ -63,7 +67,7 @@ h1{
 .item-all{
   color: #fff;/*文字色*/
   border: solid 2px #121213;/*線色*/
-  height: 400px;
+  height: 430px;
   margin:15px 0px;
   background-color: rgb(54, 48, 48);
 }
@@ -126,3 +130,26 @@ h1{
   margin-right: .75rem;
   margin-left: .75rem;
 }
+
+/* 詳細ページ */
+
+.book__hedding {
+  color:#fff;
+}
+.book__wrapper {
+  background-color: rgb(54, 48, 48);
+}
+
+
+
+.detail__title{
+  color: #FFF;
+  font-size: 25px;
+}
+
+.detail__message {
+  color: #FFF;
+}
+
+
+

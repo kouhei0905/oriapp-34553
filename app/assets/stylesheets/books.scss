@@ -14,13 +14,11 @@
 
 /* body */
 body {
-  color: #5e5e5e;
   font: 400 87.5%/1.5em 'Open Sans', sans-serif;
 }
 
 /* Form Layout */
 .form-wrapper {
-  background: #fafafa;
   margin: 3em auto;
   padding: 0 1em;
   max-width: 370px;
@@ -29,10 +27,7 @@ body {
 h1 {
   text-align: center;
   padding: 1em 0;
-}
-
-form {
-  padding: 0 1.5em;
+  color: rgb(158, 25, 25);
 }
 
 .form-item {
@@ -95,4 +90,16 @@ form {
 
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
+}
+
+/*ユーザー新規登録画面*/
+
+.form-label{
+  color: #fff;
+}
+
+/*新規投稿画面*/
+
+.mb-3{
+  color: #fff;
 }

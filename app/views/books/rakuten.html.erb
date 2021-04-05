@@ -1,26 +1,26 @@
-<%= link_to 'トップページへ戻る',root_path, class:"btn btn-secondary"%>
+<%= link_to 'トップページへ戻る',root_path, class:"btn btn-secondary w-100px	text-white"%>
 
-<%= form_tag(url: rakuten_books_path, local: true, method: :get) do  %>
-  <%= label_tag :keyword, 'キーワード検索' %>
-  <%= text_field_tag 'keyword', params[:keyword] %>
-  <%= submit_tag "楽天検索" %>
+<div class="rakutentitle">Rakuten Search</div>
+<%= form_with(url: rakuten_books_path, local: true, method: :get,class: "rakuten-form") do |form| %>
+  <%= form.text_field :keyword, placeholder: "楽天市場で検索する", class: "search-rakuten" %>
+  <%= form.submit "検索", class: "rakuten-btn" %>
 <% end %>
 
 <table>
   <thead>
     <tr>
-      <th>商品名</th>
-      <th>価格</th>
-      <th>画像</th>
+      <th class="rakutenwado">画像</th>
+      <th class="rakutenwado">価格</th>
+      <th class="rakutenwado">商品名</th>
     </tr>
   </thead>
   <tbody>
   <% if @items.present? %>
     <% @items.each do |item| %>
       <tr>
-        <td><%= link_to item.name, "#{item.url}" %></td>
-        <td align="right"><%= number_with_delimiter(item.price) %>円</td>
-        <td><img src="<%= item['smallImageUrls'][0] %>"></td>
+        <td><img src="<%= item['smallImageUrls'][0] %>" class="rakutengazo"></td>
+        <td class="rakutenprice", align="center"><%= number_with_delimiter(item.price) %>円</td>
+        <td><%= link_to item.name, "#{item.url}", class:"rakutenname"%></td>
         <td><a href="<%= item['itemUrl'] %>" target="_blank"></a></td>
       </tr>
     <% end %>
