@@ -10,6 +10,7 @@
   </head>
   <body>
     <main class="main">
+    <%= link_to 'トップページへ戻る',root_path, class:"btn btn-secondary w-100px	text-white"%>
   <div class="inner">
     <div class="book__wrapper">
       <p class="book__hedding">
@@ -67,18 +68,19 @@
           <% end %> 
         <% end %>
         <%# // ログインしているユーザーには上記を表示する %>
-        <ul class="comments_lists">
+        <div class="comments_lists">
           <%# 投稿に紐づくコメントを一覧する処理を記述する %>
-            <li class="comments_list">
+            <div class="comments_list">
+            <div class="comments_title">＜コメント一覧＞</div>
             <% @comments.each do |comment| %>
               <p>
               <%= comment.text %>
               <%#<%= link_to comment.user.name,user_path(comment.user_id), class: :comment_user %>
               </p>
             <% end %>
-            </li>
+            </div>
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
-        </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -10,6 +10,7 @@
   </head>
 
   <body>
+  <%= link_to 'トップページへ戻る',root_path, class:"btn btn-secondary w-100px	text-white"%>
   <div class="bg-transparent">
   <h1 class="text-center text-white">Book share</h1>
   <%= form_with(model: @book, local: true) do |f|%>
