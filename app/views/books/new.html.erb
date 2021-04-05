@@ -13,6 +13,7 @@
   <div class="bg-transparent">
   <h1 class="text-center text-white">Book share</h1>
   <%= form_with(model: @book, local: true) do |f|%>
+  <%= render 'shared/error_messages', model: @book %>
   <div class="container">
     <div class="row">
   <div class="mb-3">

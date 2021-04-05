@@ -1,0 +1,12 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+        nickname: ニックネーム
+        self_introduction: 自己紹介
+     book:
+       title: 本の名称
+       catch_copy: キャッチコピー
+       description: 感想
+       image: 画像
+       genre_id: ジャンル
