@@ -1,0 +1,1 @@
+Webpacker::Compiler.env["RWS_APPLICATION_ID"] = ENV["RWS_APPLICATION_ID"]

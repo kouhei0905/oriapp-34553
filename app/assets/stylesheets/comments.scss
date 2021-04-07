@@ -1,5 +1,20 @@
 
-.comments_title {
-  color: rgb(17, 16, 16);
-  font-size:20px;
+
+.book__comments{
+  font-size: 1.2rem;
+  color:#fff;
+  background-color: #777171;
+  padding: 1rem;
+  margin: 28px 0 0 0;
 }
+
+.comments_lists{
+  padding-left: 1rem;
+  padding-top:15px;
+}
+
+.comments_list{
+  list-style-type: square;
+  padding-bottom: 5px;
+}
+
