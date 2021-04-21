@@ -40,24 +40,54 @@ Pass:s111111
 <br>
 
 **投稿画面**<br>
+<img width="1000" alt="スクリーンショット 2021-04-21 15 59 50" src="https://user-images.githubusercontent.com/78341768/115510408-a7eee480-a2ba-11eb-97bf-6dc8c38ba2c9.png">
+・本の名称、キャッチコピー、感想、カテゴリー、本の画像を入力するとトップページに投稿した本が表示されます。<br>
+<br>
 
+
+**楽天検索画面**<br>
+<img width="1003" alt="スクリーンショット 2021-04-21 16 02 33" src="https://user-images.githubusercontent.com/78341768/115510685-01571380-a2bb-11eb-8dcd-fc2eda14a08c.png">
+・キーワードを入力すると楽天市場の情報を取得し商品を表示させることができます。<br>
+・リンクをクリックすると楽天市場に遷移し、商品を購入することができます。<br>
+<br>
 
 **詳細画面**<br>
 <img width="1002" alt="スクリーンショット 2021-04-21 15 53 54" src="https://user-images.githubusercontent.com/78341768/115509789-d4563100-a2b9-11eb-936c-cda66dd6ac4f.png">
 
 <img width="1002" alt="スクリーンショット 2021-04-21 15 54 09" src="https://user-images.githubusercontent.com/78341768/115509819-db7d3f00-a2b9-11eb-842b-8d00c213308c.png">
 
-・投稿されている本のタイトル、キャッチコピー、ジャンル、感想、コメント一覧が確認できます。
+・投稿されている本のタイトル、キャッチコピー、ジャンル、感想、コメント一覧が確認できます。<br>
+<br>
 
+**編集画面**<br>
+<img width="996" alt="スクリーンショット 2021-04-21 16 01 05" src="https://user-images.githubusercontent.com/78341768/115510520-cead1b00-a2ba-11eb-96d0-6ef49886d07b.png">
+・自分が投稿した内容を編集することができます。
+・何も変更しなかった場合は変更前の情報がトップページに反映されます。
 
-* Database creation
+# 工夫したポイント
+・利用者目線でトップページのレイアウトを作成し、どのボタンを押せば何ができるか分かりやすくした。<br>
+・レスポンシブ対応にしてスマホユーザーにも対応できるようにした。<br>
+・楽天APIを使用して使い勝手をよくした。<br>
 
-* Database initialization
+# 使用技術（開発環境）
+## バックエンド
+Ruby,Ruby on Rails
 
-* How to run the test suite
+## フロントエンド
+HTML,CSS,Bootstrap
 
-* Services (job queues, cache servers, search engines, etc.)
+## データベース
+MySQL,Sequel Pro
 
-* Deployment instructions
+## インフラ
+AWS(S3),heroku
 
-* ...
+## ソース管理
+GitHub,GitHubDesktop
+
+## エディタ
+VSコード
+
+# DB設計
+## Usersテーブル
+
