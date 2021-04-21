@@ -90,4 +90,23 @@ VSコード
 
 # DB設計
 ## Usersテーブル
+<img width="385" alt="スクリーンショット 2021-04-21 16 44 10" src="https://user-images.githubusercontent.com/78341768/115516226-dd96cc00-a2c0-11eb-9adc-c27e4dada64f.png">
 
+**Association**<br>
+・has_many :books<br>
+・has_many :comments
+
+## Booksテーブル
+<img width="384" alt="スクリーンショット 2021-04-21 16 44 20" src="https://user-images.githubusercontent.com/78341768/115516238-dff92600-a2c0-11eb-8afb-a74b26e5641e.png">
+
+**Association**<br>
+・belongs_to :user<br>
+・has_many :comments
+
+
+## Commentsテーブル
+<img width="387" alt="スクリーンショット 2021-04-21 16 44 29" src="https://user-images.githubusercontent.com/78341768/115516240-e1c2e980-a2c0-11eb-937d-d690d3a7d1b6.png">
+
+**Association**<br>
+・belongs_to :user<br>
+・belongs_to :books
