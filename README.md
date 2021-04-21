@@ -34,8 +34,20 @@ Pass:s111111
 ・投稿された本の詳細画面に遷移するボタンがあります。<br>
 <br>
 **新規登録画面**<br>
+<img width="999" alt="スクリーンショット 2021-04-21 15 51 16" src="https://user-images.githubusercontent.com/78341768/115509593-9527e000-a2b9-11eb-9c1f-1e5b20b12f5e.png">
+
+・ニックネーム、メールアドレス、パスワード、自己紹介を入力するとユーザー登録できます。<br>
+<br>
+
+**投稿画面**<br>
 
 
+**詳細画面**<br>
+<img width="1002" alt="スクリーンショット 2021-04-21 15 53 54" src="https://user-images.githubusercontent.com/78341768/115509789-d4563100-a2b9-11eb-936c-cda66dd6ac4f.png">
+
+<img width="1002" alt="スクリーンショット 2021-04-21 15 54 09" src="https://user-images.githubusercontent.com/78341768/115509819-db7d3f00-a2b9-11eb-842b-8d00c213308c.png">
+
+・投稿されている本のタイトル、キャッチコピー、ジャンル、感想、コメント一覧が確認できます。
 
 
 * Database creation
