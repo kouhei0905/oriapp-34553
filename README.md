@@ -28,6 +28,8 @@ Pass:s111111
 
 <img width="996" alt="スクリーンショット 2021-04-21 15 43 08" src="https://user-images.githubusercontent.com/78341768/115508458-47f73e80-a2b8-11eb-90ce-ab0e164323a0.png">
 
+<img width="1025" alt="スクリーンショット 2021-04-21 16 51 44" src="https://user-images.githubusercontent.com/78341768/115517239-e50aa500-a2c1-11eb-8293-55c87e3709de.png">
+
 ・ユーザーログインしてない場合はログインボタンと新規登録ボタンがあります。<br>
 ・投稿ボタン、検索ボタン、楽天市場で検索ボタンがあります。<br>
 ・投稿された本の一覧が表示されます。<br>
@@ -97,7 +99,7 @@ VSコード
 ・has_many :comments
 
 ## Booksテーブル
-<img width="384" alt="スクリーンショット 2021-04-21 16 44 20" src="https://user-images.githubusercontent.com/78341768/115516238-dff92600-a2c0-11eb-8afb-a74b26e5641e.png">
+<img width="387" alt="スクリーンショット 2021-04-21 16 52 17" src="https://user-images.githubusercontent.com/78341768/115517287-f358c100-a2c1-11eb-8876-4eff11dc9a5b.png">
 
 **Association**<br>
 ・belongs_to :user<br>
