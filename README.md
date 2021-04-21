@@ -1,15 +1,23 @@
-# README
+# アプリ名
+Book Share
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+読んだ本をアウトプットできるアプリケーションを作成しました。ユーザーを登録すると読んだ本を投稿できるようになります。自身が投稿した本は、編集と削除をすることができます。他のユーザーが投稿した本についてコメントすることができます。読みたい本については楽天市場で購入することが可能です。
 
-Things you may want to cover:
+# 本番環境　
+https://bookshare34553.herokuapp.com/
 
-* Ruby version
+ログイン情報(テスト用)<br><br>
 
-* System dependencies
+投稿ユーザー<br>
+Eメール:tech@sa<br>
+Pass:s111111<br>
+<br>
+一般ユーザー<br>
+Eメール:tech@sasa<br>
+Pass:s111111
 
-* Configuration
+
 
 * Database creation
 
